@@ -1,0 +1,29 @@
+.ticker-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    /* padding: 15px; */
+    /* width: 100%; */
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 80s linear infinite;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .ticker__item {
+    display: inline-block;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

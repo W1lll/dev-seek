@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE `User` ADD COLUMN `discordId` VARCHAR(191) NULL,
+    ADD COLUMN `githubId` VARCHAR(191) NULL;
